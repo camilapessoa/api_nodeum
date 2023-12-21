@@ -4,3 +4,7 @@ criando rotas -> "Qual o recurso que eu quero acessar? Conunto de endereços htt
 url ou rota base "/"
 
 instalação nodemon
+
+Aula 2
+Vídeo Iniciando com Express
+instalação express e refatoração de servidor
