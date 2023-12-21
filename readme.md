@@ -8,3 +8,7 @@ instalação nodemon
 Aula 2
 Vídeo Iniciando com Express
 instalação express e refatoração de servidor
+
+vídeo criando a rota livros
+mockar uma pequena base de dados com livros e criação da rota livros;
+Sugestão: inserir atividade para saber mais sobre json
