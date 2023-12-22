@@ -24,4 +24,13 @@ id é um nome que demos ao parâmetro
 para saber mais -> put ou patch
 Sugestão: atualização da transcrição
 
-vídeo Deletando livros 
+vídeo Deletando livros
+
+## Aula 03 Persistindo Dados
+
+vídeo banco de dados - teórico
+vídeo criando coleção no MongoDB - prático do MongoAtlas
+
+vídeo Conectando MongoDB e API
+Refatoração de código, instalação do mongoose
+Métodos de eventos on e once -> entendendo os possíveis erros de conexão.
