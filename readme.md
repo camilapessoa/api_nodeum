@@ -23,3 +23,5 @@ id é um nome que demos ao parâmetro
 
 para saber mais -> put ou patch
 Sugestão: atualização da transcrição
+
+vídeo Deletando livros 
