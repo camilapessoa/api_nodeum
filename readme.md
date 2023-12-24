@@ -34,3 +34,6 @@ vídeo criando coleção no MongoDB - prático do MongoAtlas
 vídeo Conectando MongoDB e API
 Refatoração de código, instalação do mongoose
 Métodos de eventos on e once -> entendendo os possíveis erros de conexão.
+
+vídeo Criando Models e Schemas
+Estruturação de pasta e criação de models
