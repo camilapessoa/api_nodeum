@@ -9,3 +9,5 @@ const livroSchema = new mongoose.Schema({
 }, {versionKey: false}); //version key é avançado
 
 const livro = mongoose.model("livros", livroSchema) //coleção a qual se refere e quais suas propriedades
+
+export default livro;

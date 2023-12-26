@@ -1,5 +1,6 @@
 import express from 'express';
 import conectaNaDatabase from './config/dbConnect.js';
+import livro from './models/Livro.js'
 
 const conexao = await conectaNaDatabase();
 conexao.on("error", (erro)=>{ //se o evento que acontecer na conexão, ele chega como parâmetro na conexão e envia o erro com as informações
@@ -14,19 +15,17 @@ const app = express();
 app.use(express.json()) //middleware -> uma função executando outra função
 
 
-function buscaLivros(id){
-    return livros.findIndex(livro => {
-        return livro.id ===Number(id)
-    })
-}
 
 //rotas
 app.get("/", (req, res)=>{
     res.status(200).send("Curso de Node.js")
 })
 
-app.get('/livros', (req, res) => {
-    res.status(200).json(livros)
+//async se refere a funcao callback req,res
+app.get('/livros', async (req, res) => { //express que maneja
+    //chamar o modelo
+    const listaLivros = await livro.find({}) //é o model que manda na conexão com o banco e com todas as operações que conseguimos fazer com o banco
+    res.status(200).json(listaLivros)
 })
 
 app.get('/livros/:id', (req, res) =>{

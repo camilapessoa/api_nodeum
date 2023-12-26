@@ -37,3 +37,9 @@ Métodos de eventos on e once -> entendendo os possíveis erros de conexão.
 
 vídeo Criando Models e Schemas
 Estruturação de pasta e criação de models
+
+
+- Vídeo Acessando a coleção livros
+Capturar todos os livros via mongoose e mongoAtlas
+Criação de variável de ambiente com .env
+Sugestão: inserir para saber mais sobre variáveis de ambiente e mongoose (como funcionam os métodos?)
