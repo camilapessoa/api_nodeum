@@ -21,12 +21,7 @@ app.get("/", (req, res)=>{
     res.status(200).send("Curso de Node.js")
 })
 
-//async se refere a funcao callback req,res
-app.get('/livros', async (req, res) => { //express que maneja
-    //chamar o modelo
-    const listaLivros = await livro.find({}) //é o model que manda na conexão com o banco e com todas as operações que conseguimos fazer com o banco
-    res.status(200).json(listaLivros)
-})
+
 
 app.get('/livros/:id', (req, res) =>{
     const index = buscaLivros(req.params.id)
