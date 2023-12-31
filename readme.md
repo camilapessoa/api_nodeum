@@ -90,3 +90,12 @@ Para criar o embedding de informações de autores em livros
 A forma de estruturar um modelo depende do tipo de banco e da biblioteca utilizada para a integração
 
 mongo é mais flexível que o SQL
+
+-> Vídeo Buscas por Parâmetro
+requisição passada por parâmetros
+Já temos alguns parâmetros que são os ids
+Trabalhar agora com parâmetros de consulta, o Query
+
+precedência do Express -> As rotas são chamadas em sequência que são declaradas, isso significa que devemos ordenar as rotas em uma ordem de maior complexidade para menor complexidade para não confundir os parâmetros de busca do express
+
+inserir regex no front para buscar os query params?

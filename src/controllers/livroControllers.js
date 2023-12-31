@@ -61,6 +61,22 @@ class LivroController{
             res.status(500).json({message:`${erro.message} - Falha na exclusão do Livro`});
         }
         
+    };
+
+    static async listarLivrosPorEditora (req, res){ //requisição passada por parâmetros
+        const editora = req.query.editora ;//?editora= assim é possível encadear parâmetros de query
+
+        try {
+            const livrosPorEditora = await livro.find({editora: editora}) //1 chave editora é a propriedade editora que está na Model livro, 2ª editora é a variável que guarda a informação de busca que chega via rota de consulta
+
+            //js tem padrão que se a chave e o valor forem o o mesmo dado, não precisa passar os dois campos
+
+            res.status(200).json(livrosPorEditora);
+        } catch (erro) {
+            res.status(500).json({message: `${erro.message} - falha na busca`})
+            
+        }
+
     }
 
 }
