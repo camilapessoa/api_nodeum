@@ -62,3 +62,16 @@ Atualização com o método de busca por ID via mongoose e inserção do PUT
 
 -> vídeo controller delete
 método mongoose findByIdAndDelete . Teste das rotas no postman e reforço do retorno do objeto create
+
+## Aula 05
+
+Vídeo Criando Autores
+Entender uma API rest e CRUD, que é a base de um desenvolvimento back-end web
+
+normalização de bancos através de chaves
+NoSQL -> dados que são vistos juntos precisam ser guardados juntos (embedding, incorporar)
+SQL -> referencing (fazendo referência entre partes diferentes a coleções diferentes)
+
+export de autor e autorSchema para importar o autor como uma propriedade de livro
+
+Inserção de Model, Routes, Controller de Autores
