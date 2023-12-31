@@ -1,4 +1,5 @@
-import livro from "../models/Livro.js"
+import livro from "../models/Livro.js";
+import {autor} from "../models/Autor.js"
 
 class LivroController{
     static async ListarLivros (req, res){
@@ -25,9 +26,14 @@ class LivroController{
     }
 
     static async cadastrarLivro(req, res){
+        const novoLivro = req.body;
         try{
-            const novoLivro = await livro.create(req.body)
-           res.status(201).json({message: "criado com sucesso", livro: novoLivro}); 
+            const autorEncontrado = await autor.findById(novoLivro.autor)// dentro vai ter o id do novo autor que vai ser passado pelo findbyid e retorna o objeto autor. E agora pode criar o objeto completo para passar ao banco
+            const livroCompleto = {...novoLivro, autor:{...autorEncontrado._doc}} //entrar no objeto e pegar as informações da propriedade _doc
+
+            const livroCriado = await livro.create(livroCompleto);
+
+           res.status(201).json({message: "criado com sucesso", livro: livroCompleto}); 
         }catch(erro){
             res.status(500).json({message: `${erro.message} - falha ao cadastrar livro`});
         }

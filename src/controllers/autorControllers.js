@@ -1,7 +1,7 @@
-import autor from "../models/Autor.js"
+import { autor } from "../models/Autor.js"
 
 class AutorController{
-    static async ListarAutor (req, res){
+    static async ListarAutores (req, res){
 
         try {
         const listaAutor = await autor.find({});

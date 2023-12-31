@@ -75,3 +75,18 @@ SQL -> referencing (fazendo referência entre partes diferentes a coleções dif
 export de autor e autorSchema para importar o autor como uma propriedade de livro
 
 Inserção de Model, Routes, Controller de Autores
+
+Vídeo Unindo livros e autores
+
+Devemos deixar o import de autor entre chaves { autor } porque não se trata de uma importação padrão de um módulo único, e sum um aexportação de uma lista de módulos. Portanto, devemos especificar qual módulo desejamos importar, colocando-o entre chaves.
+
+no arquivo Autor.js são exportados dois módulos: autor e autorSchema. Ao importar o autor entre chaves, estamos especificando que queremos importar apenas o módulo autor e não o autorSchema. Isso é necessário para que possamos utilizar o autor corretamente no arquivo autorController.js.
+
+Modificação nas rotas no ponto de entrada index.js
+
+Adiciona propriedade de autor dentro do model livroSchema
+
+Para criar o embedding de informações de autores em livros 
+A forma de estruturar um modelo depende do tipo de banco e da biblioteca utilizada para a integração
+
+mongo é mais flexível que o SQL
