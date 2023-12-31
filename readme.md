@@ -59,3 +59,6 @@ servidor express é enviado como parâmetro para as routes
 
 -> vídeo controller put
 Atualização com o método de busca por ID via mongoose e inserção do PUT
+
+-> vídeo controller delete
+método mongoose findByIdAndDelete . Teste das rotas no postman e reforço do retorno do objeto create
