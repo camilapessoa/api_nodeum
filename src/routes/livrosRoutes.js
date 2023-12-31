@@ -8,5 +8,6 @@ routes.get("/livros", LivroController.ListarLivros); //sem parênteses porque é
 routes.get("/livros/:id", LivroController.listarLivroPorId);
 routes.post("/livros", LivroController.cadastrarLivro);
 routes.put("/livros/:id", LivroController.atualizarLivroPorId);
+routes.delete("/livros/:id", LivroController.excluirLivro);
 
 export default routes;
