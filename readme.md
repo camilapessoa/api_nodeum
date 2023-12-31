@@ -50,3 +50,9 @@ Sugestão: inserir para saber mais sobre variáveis de ambiente e mongoose (como
 Refatoração a partir da divisão das responsabilidades de controller (controlar a req e res) e Routes
 
 O static é uma palavra-chave que usamos quando queremos usar métodos de uma classe sem ter que, antes, instanciar essa classe. Ou seja, eu não quero criar um new LivroController e só, então, conseguir usar os métodos. Eu quero poder chamar eles de forma estática. Portanto, é para isso que essa palavra-chave está aí.
+
+-> vídeo controller Post
+bloco try catch, entendendo o erro como parâmetro e propriedade, refatorando livrosRoutes para padrão barril: Criando ponto de entrada para as rotas com um index.js para ser acessado pelo resto da aplicação
+
+uso de middlewares .use() -> método express para utilização de middlewares
+servidor express é enviado como parâmetro para as routes

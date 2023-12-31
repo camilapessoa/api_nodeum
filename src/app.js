@@ -1,6 +1,6 @@
 import express from 'express';
 import conectaNaDatabase from './config/dbConnect.js';
-import livro from './models/Livro.js'
+import routes from './routes/index.js'
 
 const conexao = await conectaNaDatabase();
 conexao.on("error", (erro)=>{ //se o evento que acontecer na conexão, ele chega como parâmetro na conexão e envia o erro com as informações
@@ -12,16 +12,9 @@ conexao.once("open", ()=> {
 })
 
 const app = express();
-app.use(express.json()) //middleware -> uma função executando outra função
-
-
+routes(app);
 
 //rotas
-app.get("/", (req, res)=>{
-    res.status(200).send("Curso de Node.js")
-})
-
-
 
 app.get('/livros/:id', (req, res) =>{
     const index = buscaLivros(req.params.id)
