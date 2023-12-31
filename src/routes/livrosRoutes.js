@@ -5,4 +5,8 @@ const routes = express.Router();
 
 routes.get("/livros", LivroController.ListarLivros); //sem parênteses porque é apenas uma referência ao método que vai ser chamado
 
+routes.get("/livros/:id", LivroController.listarLivroPorId);
+routes.post("/livros", LivroController.cadastrarLivro);
+routes.put("/livros/:id", LivroController.atualizarLivroPorId);
+
 export default routes;

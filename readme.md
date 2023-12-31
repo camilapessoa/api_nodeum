@@ -56,3 +56,6 @@ bloco try catch, entendendo o erro como parâmetro e propriedade, refatorando li
 
 uso de middlewares .use() -> método express para utilização de middlewares
 servidor express é enviado como parâmetro para as routes
+
+-> vídeo controller put
+Atualização com o método de busca por ID via mongoose e inserção do PUT
